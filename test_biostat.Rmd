@@ -1,12 +1,12 @@
 ---
 output: 
-  word_document:
-    toc: yes
+  html_document:
+    keep_md: true
 toc-title: "Оглавление"
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, error = FALSE)
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, error = FALSE)
 
 library(tidyverse)
 library(readxl)
