@@ -1,5 +1,8 @@
 ---
-output: word_document
+output: 
+  word_document:
+    toc: yes
+toc-title: "Оглавление"
 ---
 
 ```{r setup, include=FALSE}
@@ -9,26 +12,12 @@ library(tidyverse)
 library(readxl)
 
 ###########################
-#library(refineR)
-
-
-
 ```
 
 ## R Markdown
-
-`r 2 + 2`
-
-
-```{r, eval=FALSE}
-original_data <- iris
-original_data
-```
-
-Среднее значение Sepal.Length равно `r round(mean(original_data$Sepal.Length), 2)`
-
+# Таблица 1 - статистическая таблица
 ```{r}
-plot(pressure)
-
+originals_data <- read.csv('data/originals/some_data.csv', sep=";")
+head(originals_data, 5)
 ```
 
